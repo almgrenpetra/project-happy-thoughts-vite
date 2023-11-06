@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+h3 {
+  font-family: "Abril Fatface", serif;
+  background: -webkit-linear-gradient(
+    45deg,
+    #ff199f,
+    #cd8cdd,
+    #5be288,
+    #bef146,
+    #7e6ed8
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.message-card {
+  width: 90%;
+  max-width: 730px;
+  margin: 25px 0;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  border: 1px solid rgb(105, 105, 105);
+  padding: 20px;
+}
+
+.message {
+  word-break: break-word;
+}
+
+.message-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-container {
+  display: flex;
+}
+
+.like-button {
+  margin-right: 5px;
+  background-color: #d1d1d1;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  animation: pulse-small 2s infinite;
+}
+
+.like-button:hover {
+  background: rgb(255, 199, 220);
+}
+
+.emoji {
+  font-size: 24px;
+}
+
+@keyframes pulse-small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 675px) {
+  .message-card {
+    width: 70%;
+  }
+}
